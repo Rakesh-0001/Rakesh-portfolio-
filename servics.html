@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servics page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+</head>
+
+<body>
+
+     <!-- NAVBAR CODE -->
+
+     <nav class="navbar navbar-expand-lg bg-dark-subtle container-xxl p-2  ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="70" height="40">
+
+            </a>
+            <button class="navbar-toggler border-0 shadow-none ms-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-label="Toggle navigation">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom ">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <a class="navbar-brand" href="#">
+                            <img src="logo.png" alt="Logo" width="70" height="40">
+
+                        </a>
+
+                    </h5>
+                    <button type="button" class=" shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-x"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul
+                        class="navbar-nav menu d-flex justify-content-evenly align-items-center p-2   flex-grow-1   pt-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="skill.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="empty.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="servics.html">Service</a>
+                        </li>
+
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+            <!-- sss -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn shadow-none border-0 " data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                <img src="profile.jpg" class="tog-img" alt="">
+            </button>
+
+            <!-- Modal -->
+            <div class="  modal fade  " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="3" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h1 class="modal-title fs-5 ps-5 mx-auto" id="staticBackdropLabel">Welcome to My Web
+                                site
+                            </h1>
+                            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column justify-content-center p-4">
+                            <img src="profile.jpg" class=" pro-img mx-auto mt-3" alt="">
+
+
+
+                            <div class="text-center mt-3">
+                                <h2>- WEBSITE -</h2>
+                                <h6> Designer / Developer </h6>
+
+
+
+                                <div class="container border p-2 mt-3" id="mail">
+
+                                    <div class="row mt-4">
+                                        <h4 class=" font-monospace text-bg-primary w-75 mx-auto p-1"
+                                            style="font-family: 'Koulen', sans-serif; font-weight: 600;">Text Me
+                                        </h4>
+
+                                    </div>
+
+                                    <div class="row row-cols-1  p-3 g-4">
+
+                                        <form action="https://formsubmit.co/16940d430766892431d18165965b5acd"
+                                            method="POST">
+                                            <input type="hidden" name="_template" value="table">
+                                            <div class="col">
+                                                <input type="text" name="name" class="form-control shadow-none 
+                       border-1 " placeholder="name" required>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <input type="email" name="email" class="form-control shadow-none 
+                       border-1 " placeholder="xxx@gmail.com" required>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <input type="text" name="subject" class="form-control shadow-none 
+                       border-1 " placeholder="subject" required>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <textarea name="message" class="form-control shadow-none 
+                       border-1 " id="exampleFormControlTextarea1" placeholder="type your message...."
+                                                    rows="3"></textarea>
+                                            </div>
+                                            <div class="mail">
+                                                <button>
+                                                    Send Me
+                                                    <div class="arrow-wrapper">
+                                                        <div class="arrow"></div>
+
+                                                    </div>
+                                                </button>
+
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                                <!-- MAIL FORM END-->
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </nav>
+    <!-- NAVBAR CODE END -->
+
+
+    <div class="container-xxl home">
+
+        <!-- SERVICE CODE -->
+
+        <div class="" id="services">
+
+            <div class="row text-center mt-1 p-1">
+                <h1 class="bg-body-tertiary  font-monospace p-2  "
+                    style="font-family: 'Koulen', sans-serif; font-weight: 600;">My Services </h1>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 row-cols-sm-1  g-4 mt-2 p-3 row-cols-xl-3 row-cols-xxl-4 ">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+
+                <div class="col">
+                    <div class="card p-3 ">
+                        <img src="busi1.png" class="card-img-center w-25 m-auto mt-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-bg-danger"> BUSINESS WEBSITES</h5>
+                            <p class="card-text mt-3">Boost your online sales with our top ecommerce website development
+                                service. Maximize ROI. Enhance your website with our custom website development
+                                services.
+                                Get a quote today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card p-3">
+                        <img src="edu2.png" class="card-img-top w-25 m-auto mt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-bg-danger"> WEBTECH TEACHING</h5>
+                            <p class="card-text mt-3">Building learning materials in app form creates all of the
+                                functionality, flexibility, interactivity and currency that teachers and students are
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card p-2">
+                        <img src="ser3.png" class="card-img-top w-25 m-auto mt-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-bg-danger">WEB DEVELOPMENT</h5>
+                            <p class="card-text mt-3">Builds, designs, and maintains all websites and software
+                                applications.
+                                Regulates exposure to business stakeholders and executive management as well as other
+                                authorities. Designs, writes, and edits website content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card p-2">
+                        <img src="stu.jpg" class="card-img-top w-50 m-auto mt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-bg-danger text-center">STUDENT PROJECTS</h5>
+                            <p class="card-text">creative service learning projects to inspire your students · Health
+                                and
+                                wellness focus · Community service focus · Environmental focus · Safety ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card p-4 ">
+                        <img src="res.png" class="card-img-center w-25 m-auto mt-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-bg-danger">RESPOSIVE WEBSITES</h5>
+                            <p class="card-text mt-3">Beautiful example of websites that use responsive web design.
+                                Being
+                                fully adaptive doesn't mean solely being mobile and tablet friendly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card p-3">
+                        <img src="e-.png" class="card-img-top w-50 m-auto mt-3 " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-bg-danger">E-COMMERCE WEBSITES</h5>
+                            <p class="card-text mt-3">Amazon. Amazon is one of the largest e-commerce stores there is.
+                                It's
+                                also a great example of a site that uses its design to make it easy for customers to
+                                navigate to what they want</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card">
+                        <img src="free.png  " class="card-img-top w-25 m-auto mt-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-bg-danger">FREELANCEING</h5>
+                            <p class="card-text mt-3">freelance business websites to help you start thinking about your
+                                own
+                                site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- SERVICE CODE END -->
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="progress.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

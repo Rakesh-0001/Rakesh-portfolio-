@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR CODE -->
+
+    <nav class="navbar navbar-expand-lg bg-dark-subtle container-xxl p-2  ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="70" height="40">
+
+            </a>
+            <button class="navbar-toggler border-0 shadow-none ms-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-label="Toggle navigation">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom ">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <a class="navbar-brand" href="#">
+                            <img src="logo.png" alt="Logo" width="70" height="40">
+
+                        </a>
+
+                    </h5>
+                    <button type="button" class=" shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-x"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul
+                        class="navbar-nav menu d-flex justify-content-evenly align-items-center p-2   flex-grow-1   pt-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="skill.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="empty.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="servics.html">Service</a>
+                        </li>
+
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+            <!-- sss -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn shadow-none border-0 " data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                <img src="profile.jpg" class="tog-img" alt="">
+            </button>
+
+            <!-- Modal -->
+            <div class="  modal fade  " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="3" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h1 class="modal-title fs-5 ps-5 mx-auto" id="staticBackdropLabel">Welcome to My Web
+                                site
+                            </h1>
+                            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column justify-content-center p-4">
+                            <img src="profile.jpg" class=" pro-img mx-auto mt-3" alt="">
+
+
+
+                            <div class="text-center mt-3">
+                                <h2>- WEBSITE -</h2>
+                                <h6> Designer / Developer </h6>
+
+
+
+                                <div class="container border p-2 mt-3" id="mail">
+
+                                    <div class="row mt-4">
+                                        <h4 class=" font-monospace text-bg-primary w-75 mx-auto p-1"
+                                            style="font-family: 'Koulen', sans-serif; font-weight: 600;">Text Me
+                                        </h4>
+
+                                    </div>
+
+                                    <div class="row row-cols-1  p-3 g-4">
+
+                                        <form action="https://formsubmit.co/16940d430766892431d18165965b5acd"
+                                            method="POST">
+                                            <input type="hidden" name="_template" value="table">
+                                            <div class="col">
+                                                <input type="text" name="name" class="form-control shadow-none 
+                       border-1 " placeholder="name" required>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <input type="email" name="email" class="form-control shadow-none 
+                       border-1 " placeholder="xxx@gmail.com" required>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <input type="text" name="subject" class="form-control shadow-none 
+                       border-1 " placeholder="subject" required>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <textarea name="message" class="form-control shadow-none 
+                       border-1 " id="exampleFormControlTextarea1" placeholder="type your message...."
+                                                    rows="3"></textarea>
+                                            </div>
+                                            <div class="mail">
+                                                <button>
+                                                    Send Me
+                                                    <div class="arrow-wrapper">
+                                                        <div class="arrow"></div>
+
+                                                    </div>
+                                                </button>
+
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                                <!-- MAIL FORM END-->
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </nav>
+    <!-- NAVBAR CODE END -->
+
+    <div class="container-xxl  home ">
+
+        <h1 class="text-center mt-2 p-2   mx-auto bg-body-tertiary "
+            style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">About Me </h1>
+
+
+        <div class="container-fluid">
+
+            <div class=" row   ">
+
+                <div class="col d-flex flex-column text-center">
+                    <div data-aos="fade-up-right">
+                        <img src="Untitled-2.png" class="mx-auto me-5 mw-50 im " alt="">
+                    </div>
+                </div>
+
+                <div class="col d-flex flex-column justify-content-center p-3">
+                    <div data-aos="fade-up-left">
+                        <h1>Hello</h1>
+                        <h5>Here's Who I Am & What I Do</h5>
+                        <p>"I am Rakesh, full stack web developer, I possess a comprehensive understanding of both
+                            front-end
+                            and
+                            back-end technologies, allowing me to create robust and dynamic web applications.
+                            From
+                            crafting responsive user interfaces using HTML, CSS, and JavaScript to developing
+                            etc...</p>
+
+                        <div class="mt-2 d-flex ">
+                            <button class="bt">
+                                <a
+                                    href="https://drive.google.com/file/d/1Ak7VTCdCarbbGSCvyJzc0XimxfaGdg2w/view?usp=drivesdk">cv
+                                    <i class="fa-solid fa-file"></i></a>
+                            </button>
+
+                            <button type="button" class="ms-3  " data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z">
+                                    </path>
+                                </svg>
+                                <span class="ms-2">Text Me</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!--     -->
+                    <!-- Modal -->
+                    <div class="  modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="3" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog mt-5">
+                            <div class="modal-content">
+                                <div class="modal-header   ">
+                                    <h1 class="modal-title fs-5  text-center mx-auto me-5 id=" staticBackdropLabel">
+                                        Message Me
+                                    </h1>
+                                    <button type="button" class="btn-close  shadow-none border-0"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column justify-content-center p-4">
+
+
+
+                                    <!-- MAIL FORM -->
+
+                                    <div class="" id="mail">
+
+                                        <div class="row row-cols-1  p-3 g-4">
+
+                                            <form action="https://formsubmit.co/16940d430766892431d18165965b5acd"
+                                                method="POST">
+                                                <input type="hidden" name="_template" value="table">
+                                                <div class="col">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label text-primary">Name</label>
+                                                    <input type="text" name="name" class="form-control shadow-none 
+                       border-1 " placeholder="xxx" required>
+                                                </div>
+                                                <div class="col mt-2">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label text-primary">Email</label>
+                                                    <input type="email" name="email" class="form-control shadow-none 
+                       border-1 " placeholder="xxx@gmail.com" required>
+                                                </div>
+                                                <div class="col mt-2">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label text-primary">Subject</label>
+                                                    <input type="text" name="subject" class="form-control shadow-none 
+                       border-1 " placeholder="just enquiry" required>
+                                                </div>
+                                                <div class="col mt-2">
+                                                    <label for="exampleFormControlTextarea1"
+                                                        class="form-label text-primary">Message</label>
+                                                    <textarea name="message" class="form-control shadow-none 
+                       border-1 " id="exampleFormControlTextarea1" placeholder="type your message...."
+                                                        rows="3"></textarea>
+                                                </div>
+                                                <div class="mail">
+                                                    <button>
+                                                        Send Me
+                                                        <div class="arrow-wrapper">
+                                                            <div class="arrow"></div>
+
+                                                        </div>
+                                                    </button>
+
+
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- MAIL FORM END-->
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="d-flex   justify-content-between w-50 icon-list mt-4 ">
+                        <a href="https://www.linkedin.com/in/rakesh2001/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Rakesh-0001"> <i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:rakkiii49sh8@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/6381849973"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

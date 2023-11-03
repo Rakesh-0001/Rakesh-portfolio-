@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Rowdies&family=Teko:wght@500&display=swap');
+
+.menu-link {
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.home {
+    background-image: url('particles.gif');
+}
+
+.tog-img {
+    width: 28px;
+    border-radius: 50%;
+}
+
+.pro-img {
+    width: 120px;
+
+}
+
+.text-mail {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.text-mail a {
+    color: white;
+    text-decoration: none;
+}
+
+.text-mail button {
+    --primary-color: rgb(31, 135, 84);
+    --secondary-color: #fff;
+    --hover-color: #212121;
+    --arrow-width: 12px;
+    --arrow-stroke: 1.3px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: 9px 120px;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: 500;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.text-mail button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-mail button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.text-mail button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.text-mail button:hover {
+    background-color: var(--hover-color);
+}
+
+
+.text-mail button:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.text-mail button:hover .arrow:before {
+    right: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    width: fit-content;
+    padding: 18px;
+    height: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu li:hover {
+    color: rgb(43, 43, 43);
+    width: fit-content;
+    height: 24px;
+    background-color: rgba(5, 5, 5, .1);
+
+}
+
+.icon-list {
+    position: relative;
+    right: 29px;
+}
+
+.icon-list a {
+    color: black;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    text-decoration: none;
+    border: .7px solid gray;
+    background-color: rgba(78, 69, 69, 0.1);
+}
+
+.icon-list a:hover {
+    background-color: rgb(108, 117, 125);
+    border: .7px solid gray;
+
+}
+
+
+.range {
+    position: relative;
+    background-color: #4d4d4d;
+    width: 300px;
+    height: 23px;
+    left: 40px;
+    transform: skew(30deg);
+    font-family: 'Orbitron', monospace;
+
+    &:before {
+        --width: calc(var(--p) * 1%);
+
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #fff200;
+        z-index: 0;
+        animation: load .5s forwards linear, glitch 2s infinite linear;
+    }
+
+    &:after {
+        counter-reset: progress var(--p);
+        content: counter(progress) '%';
+        color: #000;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%) skewX(-30deg);
+        z-index: 1;
+    }
+
+    &__label {
+        transform: skew(-30deg) translateY(-100%);
+        line-height: 1.5;
+    }
+}
+
+@keyframes load {
+    to {
+        width: var(--width);
+    }
+}
+
+@keyframes glitch {
+
+    0%,
+    5% {
+        transform: translate(0, 0);
+    }
+
+    1% {
+        transform: translate(-5%, -10%);
+    }
+
+    2% {
+        transform: translate(10%, 30%);
+    }
+
+    3% {
+        transform: translate(-43%, 10%);
+    }
+
+    4% {
+        transform: translate(2%, -23%);
+    }
+}
+
+/*  */
+.mail {
+    display: flex;
+    justify-content: start;
+    padding-top: 20px;
+}
+
+.mail button {
+    --primary-color: rgb(18, 110, 222);
+    --secondary-color: #fff;
+    --hover-color: #212121;
+    --arrow-width: 12px;
+    --arrow-stroke: 1.3px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: 9px 50px;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: 500;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.mail button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.mail button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.mail button:hover {
+    background-color: var(--hover-color);
+}
+
+
+.mail button:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.mail button:hover .arrow:before {
+    right: 0;
+}
+
+.icon-lists a {
+    color: black;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    text-decoration: none;
+    border: .7px solid rgb(86, 86, 86);
+    background-color: white;
+}
+
+.icon-lists a:hover {
+    background-color: rgb(84, 85, 85);
+    border: .7px solid gray;
+
+}
+
+.call a {
+    color: white;
+}
+.foot h6{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 12px;
+}

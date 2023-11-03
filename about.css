@@ -1,0 +1,66 @@
+.icon-list{
+    position: relative;
+    right: 29px;
+}
+.icon-list a{
+    color: black;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    text-decoration: none;
+    border: .7px solid gray;
+    background-color: rgba(78, 69, 69, 0.1);
+}
+
+.icon-list a:hover {
+    background-color: rgb(108,117,125);
+    border: .7px solid gray;
+
+}
+.home{
+    background-image: url('particles.gif');
+}
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 7px 20px;
+    color: black;
+    background-color: rgb(206,212,218);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(0deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    font-size: 13px;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+  i{
+    font-size: 13px;
+  }
+  .bt a{
+    color: black;
+    text-decoration: none;
+
+  }
