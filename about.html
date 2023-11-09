@@ -8,6 +8,7 @@
     <title>about page</title>
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="preloader.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,6 +21,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
 
     <!-- NAVBAR CODE -->
 
@@ -350,6 +352,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+       <script>
+
+        var loader = document.getElementById('preloader')
+        window.addEventListener('load', function () {
+            loader.style.display = "none"
+        })
+
     </script>
 </body>
 
